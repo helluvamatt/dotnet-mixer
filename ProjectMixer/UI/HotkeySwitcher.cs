@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjectMixer
+namespace ProjectMixer.UI
 {
-	public partial class MixerOptionsForm : Common.TrayApplication.OptionsForm
+	public partial class HotkeySwitcher : Form
 	{
-		public MixerOptionsForm()
+		public HotkeySwitcher()
 		{
 			InitializeComponent();
 		}

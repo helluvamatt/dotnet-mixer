@@ -1,6 +1,6 @@
-﻿namespace ProjectMixer
+﻿namespace ProjectMixer.UI
 {
-	partial class MixerOptionsForm
+	partial class HotkeySwitcher
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,11 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.SuspendLayout();
+			// 
+			// HotkeySwitcher
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "OptionsForm";
+			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Name = "HotkeySwitcher";
+			this.Text = "Hotkey Switcher";
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
 	}
 }
+

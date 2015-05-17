@@ -1,6 +1,7 @@
 ﻿using Common.UI.Hotkeys;
 using ProjectMixer.Data;
 using ProjectMixer.Properties;
+using ProjectMixer.UI;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

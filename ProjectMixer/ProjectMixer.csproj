@@ -55,22 +55,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\SettingsObject.cs" />
-    <Compile Include="HotkeySwitcher.cs">
+    <Compile Include="UI\HotkeySwitcher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HotkeySwitcher.Designer.cs">
+    <Compile Include="UI\HotkeySwitcher.Designer.cs">
       <DependentUpon>HotkeySwitcher.cs</DependentUpon>
     </Compile>
-    <Compile Include="MixerOptionsForm.cs">
+    <Compile Include="UI\MixerOptionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MixerOptionsForm.Designer.cs">
+    <Compile Include="UI\MixerOptionsForm.Designer.cs">
       <DependentUpon>MixerOptionsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MixerTrayApplicationContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="HotkeySwitcher.resx">
+    <EmbeddedResource Include="UI\HotkeySwitcher.resx">
       <DependentUpon>HotkeySwitcher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
