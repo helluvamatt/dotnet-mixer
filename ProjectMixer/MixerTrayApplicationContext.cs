@@ -1,4 +1,5 @@
-﻿using Common.UI.Hotkeys;
+﻿using Common.TrayApplication;
+using Common.UI.Hotkeys;
 using ProjectMixer.Data;
 using ProjectMixer.Properties;
 using ProjectMixer.UI;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProjectMixer
 {
@@ -17,20 +19,32 @@ namespace ProjectMixer
 	{
 		private HotkeyManager _HotkeyManager;
 
+		#region TrayApplicationContext implementation
+
 		protected override void OnInitializeContext()
 		{
 			_HotkeyManager = new HotkeyManager();
 			// TODO
 		}
 
-		protected override Common.TrayApplication.OptionsForm BuildOptionsForm()
+		protected override OptionsForm OnBuildOptionsForm()
 		{
-			return new MixerOptionsForm();
+			MixerOptionsForm form = new MixerOptionsForm();
+			form.OptionChanged += MixerOptionsForm_OptionChanged;
+			return form;
 		}
 
-		protected override void BuildContextMenu()
+		protected override void OnBuildContextMenu(ContextMenuStrip menu)
 		{
 			// TODO
+
+			// Build the context menu: exitMenuItem
+			ToolStripMenuItem exitMenuItem = new ToolStripMenuItem(Resources.MenuItemExit);
+			exitMenuItem.Click += exitMenuItem_Click;
+
+			// Build contextMenu
+			//menu.Items.Add(new ToolStripSeparator());
+			menu.Items.Add(exitMenuItem);
 		}
 
 		protected override Icon ApplicationIcon
@@ -62,5 +76,21 @@ namespace ProjectMixer
 			_HotkeyManager.Dispose();
 			base.Dispose(disposing);
 		}
+
+		#endregion
+
+		#region Event handlers
+
+		private void MixerOptionsForm_OptionChanged(object sender, OptionChangedEventArgs args)
+		{
+			// TODO
+		}
+
+		private void exitMenuItem_Click(object sender, EventArgs e)
+		{
+			ExitThread();
+		}
+
+		#endregion
 	}
 }

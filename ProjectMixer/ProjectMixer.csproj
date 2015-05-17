@@ -83,6 +83,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\MixerOptionsForm.resx">
+      <DependentUpon>MixerOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,7 +97,28 @@
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="assets\ic_action_done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\ic_action_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\ic_content_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\ic_content_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\ic_shortcuts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\ic_speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="appicon.ico" />
+    <Content Include="appicon.svg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

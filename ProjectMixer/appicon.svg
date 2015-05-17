@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+	<!-- <path d="M 10,0 L 44,0 L 46.5,2.5 Q 48,4 48,5.5 L 48,44 Q 48,48 45,48 L 3,48 Q 0,48 0,45 " style="fill: #cccccc; stroke: none;" /> -->
+	<rect x="4" y="4" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="3.5" y="3.5" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="3" y="3" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="2.5" y="2.5" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="2" y="2" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="1.5" y="1.5" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="1" y="1" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="0.5" y="0.5" width="44" height="44" rx="3" ry="3" style="fill: #ccc; stroke: none;" />
+	<rect x="0" y="0" width="44" height="44" rx="3" ry="3" style="fill: #fff; stroke: none;" />
+	<path d="M31.167 3.667h-18.333c-2.026 0-3.667 1.641-3.667 3.667v29.333c0 2.026 1.641 3.648 3.667 3.648l18.333 0.018c2.026 0 3.667-1.641 3.667-3.667v-29.333c0-2.026-1.641-3.667-3.667-3.667zM22 7.333c2.026 0 3.667 1.641 3.667 3.667s-1.641 3.667-3.667 3.667-3.667-1.641-3.667-3.667 1.641-3.667 3.667-3.667zM22 36.667c-5.060 0-9.167-4.107-9.167-9.167s4.107-9.167 9.167-9.167 9.167 4.107 9.167 9.167-4.107 9.167-9.167 9.167zM22 22c-3.034 0-5.5 2.466-5.5 5.5s2.466 5.5 5.5 5.5 5.5-2.466 5.5-5.5-2.466-5.5-5.5-5.5z" fill="#004883" />
+</svg>
