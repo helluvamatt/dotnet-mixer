@@ -66,5 +66,10 @@ namespace ProjectMixer.UI
 		}
 
 		#endregion
+
+		private void hotkeysEnabledCheckBox_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
