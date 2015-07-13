@@ -148,4 +148,13 @@
   <data name="ProgramTerminated" xml:space="preserve">
     <value>Program Terminated Unexpectedly</value>
   </data>
+  <data name="Hotkey_Selector_Desc" xml:space="preserve">
+    <value>Immediately show the selector, so a profile can be quickly selected</value>
+  </data>
+  <data name="Hotkey_Selector_Name" xml:space="preserve">
+    <value>Show Selector</value>
+  </data>
+  <data name="MenuItemManage" xml:space="preserve">
+    <value>&amp;Manage</value>
+  </data>
 </root>

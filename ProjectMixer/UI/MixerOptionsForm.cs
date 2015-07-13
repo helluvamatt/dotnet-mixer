@@ -18,6 +18,16 @@ namespace ProjectMixer.UI
 			InitializeComponent();
 		}
 
+		#region OptionsForm impl
+
+		public override void PopulateSettings()
+		{
+			// TODO Populate settings
+
+		}
+
+		#endregion
+
 		#region Event handlers
 
 		private void optionsFormTabControl_DrawItem(object sender, DrawItemEventArgs e)
@@ -65,11 +75,11 @@ namespace ProjectMixer.UI
 			g.DrawString(_tabPage.Text, e.Font, _brush, _tabBounds, new StringFormat(_stringFlags));
 		}
 
-		#endregion
-
 		private void hotkeysEnabledCheckBox_CheckedChanged(object sender, EventArgs e)
 		{
 
 		}
+
+		#endregion
 	}
 }
