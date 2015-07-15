@@ -177,31 +177,70 @@
   <data name="&gt;&gt;settingsTabPage.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="hotkeyListScrollPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="hotkeyListScrollPanel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 40</value>
+  <data name="hotkeyListLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>613, 505</value>
+  <data name="hotkeyListLayoutPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="hotkeyListLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
+  <data name="hotkeyListLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+  <data name="hotkeyListLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="hotkeyListLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="hotkeyListLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 0</value>
+  </data>
+  <data name="hotkeyListLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;hotkeyListLayoutPanel.Name" xml:space="preserve">
+    <value>hotkeyListLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;hotkeyListLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hotkeyListLayoutPanel.Parent" xml:space="preserve">
+    <value>hotkeyListScrollPanel</value>
+  </data>
+  <data name="&gt;&gt;hotkeyListLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="hotkeyListLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="hotkeyListScrollPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 40</value>
+  </data>
+  <data name="hotkeyListScrollPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>613, 505</value>
+  </data>
+  <data name="hotkeyListScrollPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;hotkeyListScrollPanel.Name" xml:space="preserve">
+    <value>hotkeyListScrollPanel</value>
+  </data>
+  <data name="&gt;&gt;hotkeyListScrollPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;hotkeyListScrollPanel.Parent" xml:space="preserve">
     <value>hotkeysTabPage</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;hotkeyListScrollPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="hotkeysEnabledCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -296,6 +335,9 @@
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>300, 300</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Project Mixer</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MixerOptionsForm</value>

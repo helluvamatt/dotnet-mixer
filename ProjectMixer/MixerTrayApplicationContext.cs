@@ -2,16 +2,14 @@
 using Common.UI.Hotkeys;
 using Common.UI.Win32Interop;
 using ProjectMixer.Data;
+using ProjectMixer.Data.Entities;
 using ProjectMixer.Properties;
 using ProjectMixer.UI;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectMixer
@@ -19,11 +17,17 @@ namespace ProjectMixer
 	class MixerTrayApplicationContext : Common.TrayApplication.TrayApplicationContext<SettingsObject>
 	{
 		private HotkeyManager _HotkeyManager;
+		private HotkeySwitcher _HotkeySwitcherForm;
+		private ProfileManager _ProfileManager;
+
+		#region Constructor
 
 		public MixerTrayApplicationContext() : base()
 		{
 			_HotkeyManager = new HotkeyManager();
 		}
+
+		#endregion
 
 		#region Hotkey Names
 
@@ -84,7 +88,7 @@ namespace ProjectMixer
 
 		protected override OptionsForm OnBuildOptionsForm()
 		{
-			MixerOptionsForm form = new MixerOptionsForm();
+			MixerOptionsForm form = new MixerOptionsForm(SettingsManager, _HotkeyManager);
 			form.OptionChanged += MixerOptionsForm_OptionChanged;
 			return form;
 		}
@@ -141,7 +145,10 @@ namespace ProjectMixer
 
 		private void MixerOptionsForm_OptionChanged(object sender, OptionChangedEventArgs args)
 		{
-			// TODO
+			// Save INI file
+			SaveSettingsAsync(null, IniFile);
+
+			// TODO If any settings need to propagated somewhere else, do that here
 		}
 
 		private void exitMenuItem_Click(object sender, EventArgs e)
@@ -159,6 +166,13 @@ namespace ProjectMixer
 		private void hotkey_ShowSelector()
 		{
 			// TODO Show selector form
+			Logger.Info("ShowSelector hotkey triggered...");
+
+			if (_HotkeySwitcherForm == null)
+			{
+				_HotkeySwitcherForm = new HotkeySwitcher(_ProfileManager);
+				
+			}
 		}
 
 		#endregion

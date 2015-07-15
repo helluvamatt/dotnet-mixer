@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace ProjectMixer.Data
+namespace ProjectMixer.Data.Entities
 {
-	class SettingsObject
+	public class SettingsObject
 	{
 		[Browsable(false), DefaultValue(false)]
 		public bool HotkeysEnabled { get; set; }

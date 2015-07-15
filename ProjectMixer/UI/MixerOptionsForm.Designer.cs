@@ -33,10 +33,12 @@
 			this.profilesTabPage = new System.Windows.Forms.TabPage();
 			this.settingsTabPage = new System.Windows.Forms.TabPage();
 			this.hotkeysTabPage = new System.Windows.Forms.TabPage();
+			this.hotkeyListScrollPanel = new System.Windows.Forms.Panel();
+			this.hotkeyListLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.hotkeysEnabledCheckBox = new System.Windows.Forms.CheckBox();
-			this.panel1 = new System.Windows.Forms.Panel();
 			this.optionsFormTabControl.SuspendLayout();
 			this.hotkeysTabPage.SuspendLayout();
+			this.hotkeyListScrollPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// optionsFormTabControl
@@ -65,11 +67,24 @@
 			// 
 			// hotkeysTabPage
 			// 
-			this.hotkeysTabPage.Controls.Add(this.panel1);
+			this.hotkeysTabPage.Controls.Add(this.hotkeyListScrollPanel);
 			this.hotkeysTabPage.Controls.Add(this.hotkeysEnabledCheckBox);
 			resources.ApplyResources(this.hotkeysTabPage, "hotkeysTabPage");
 			this.hotkeysTabPage.Name = "hotkeysTabPage";
 			this.hotkeysTabPage.UseVisualStyleBackColor = true;
+			// 
+			// hotkeyListScrollPanel
+			// 
+			resources.ApplyResources(this.hotkeyListScrollPanel, "hotkeyListScrollPanel");
+			this.hotkeyListScrollPanel.BackColor = System.Drawing.SystemColors.Control;
+			this.hotkeyListScrollPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.hotkeyListScrollPanel.Controls.Add(this.hotkeyListLayoutPanel);
+			this.hotkeyListScrollPanel.Name = "hotkeyListScrollPanel";
+			// 
+			// hotkeyListLayoutPanel
+			// 
+			resources.ApplyResources(this.hotkeyListLayoutPanel, "hotkeyListLayoutPanel");
+			this.hotkeyListLayoutPanel.Name = "hotkeyListLayoutPanel";
 			// 
 			// hotkeysEnabledCheckBox
 			// 
@@ -77,13 +92,6 @@
 			this.hotkeysEnabledCheckBox.Name = "hotkeysEnabledCheckBox";
 			this.hotkeysEnabledCheckBox.UseVisualStyleBackColor = true;
 			this.hotkeysEnabledCheckBox.CheckedChanged += new System.EventHandler(this.hotkeysEnabledCheckBox_CheckedChanged);
-			// 
-			// panel1
-			// 
-			resources.ApplyResources(this.panel1, "panel1");
-			this.panel1.BackColor = System.Drawing.SystemColors.Control;
-			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel1.Name = "panel1";
 			// 
 			// MixerOptionsForm
 			// 
@@ -93,6 +101,8 @@
 			this.Name = "MixerOptionsForm";
 			this.optionsFormTabControl.ResumeLayout(false);
 			this.hotkeysTabPage.ResumeLayout(false);
+			this.hotkeyListScrollPanel.ResumeLayout(false);
+			this.hotkeyListScrollPanel.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -103,7 +113,8 @@
 		private System.Windows.Forms.TabPage profilesTabPage;
 		private System.Windows.Forms.TabPage settingsTabPage;
 		private System.Windows.Forms.TabPage hotkeysTabPage;
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel hotkeyListScrollPanel;
 		private System.Windows.Forms.CheckBox hotkeysEnabledCheckBox;
+		private System.Windows.Forms.TableLayoutPanel hotkeyListLayoutPanel;
 	}
 }

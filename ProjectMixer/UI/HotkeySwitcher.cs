@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectMixer.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace ProjectMixer.UI
 {
 	public partial class HotkeySwitcher : Form
 	{
-		public HotkeySwitcher()
+		private ProfileManager _ProfileManager;
+
+		public HotkeySwitcher(ProfileManager pm)
 		{
 			InitializeComponent();
+			_ProfileManager = pm;
 		}
 	}
 }

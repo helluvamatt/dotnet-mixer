@@ -54,7 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\SettingsObject.cs" />
+    <Compile Include="Data\Entities\Profile.cs" />
+    <Compile Include="Data\ProfileManager.cs" />
+    <Compile Include="Data\Entities\SettingsObject.cs" />
+    <Compile Include="Data\ProfileMixer.cs" />
     <Compile Include="UI\HotkeySwitcher.cs">
       <SubType>Form</SubType>
     </Compile>
